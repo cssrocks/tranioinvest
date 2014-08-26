@@ -1,0 +1,336 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic)
+
++font("PragmaticaLight", "PragmaticaLight")
+
+%in
+	width: 1200px
+	margin-left: auto
+	margin-right: auto
+
+.has-page-invest
+	background: #f5f8f9
+	.header-wrap
+		background: #fff
+		.container
+			margin-bottom: 0
+	.pre-footer
+		height: 292px
+	.footer
+		padding-top: 28px
+		border-top: 1px solid #e0e7e8
+
+.page-invest
+	font-family: 'PT Sans', sans-serif
+	+font-smoothing
+	font-size: 16px
+	line-height: 20px
+	.h1
+		font-family: 'PT Sans', sans-serif
+		font-size: 24px
+		font-weight: normal
+		font-style: normal
+		color: #1d1d1d
+		line-height: 1
+		margin-bottom: 21px
+	.btn
+		font-family: 'PT Sans', sans-serif
+		display: inline-block
+		font-weight: bold
+		font-size: 14px
+		color: #fff
+		text-decoration: none
+		background: #00aad5
+		border: none
+		+font-smoothing
+		line-height: 20px
+		padding: 8px 18px
+		outline: 0
+		+border-radius(4px)
+		+transition(all .3s ease-in-out)
+		cursor: pointer
+		&:hover
+			background: #008dba
+	.link-btn
+		display: inline-block
+		vertical-align: middle
+		font-size: 11px
+		line-height: 1
+		color: #808080
+		text-decoration: none
+		border-bottom: 1px solid #c2c2c2
+		&:hover
+			text-decoration: none
+			border-color: #d4505c
+			color: #e42239
+	.cols2
+		+clr
+		.col1,
+		.col2
+			width: 520px
+		.col1
+			float: left
+		.col2
+			float: right
+	.cols3
+		+clr
+		.col1,
+		.col2,
+		.col3
+			float: left
+			width: 365px
+			margin-left: 52px
+		.col1
+			margin-left: 0
+
+.investpromo
+	font-family: 'PragmaticaLight', sans-serif
+	background: image-url("bg-promoinvest.jpg") 50% 50% no-repeat
+	+cover
+	text-align: center
+	color: #fff
+	font-size: 48px
+	line-height: 1
+	.investpromo__in
+		@extend %in
+		padding: 45px 0
+
+.investcards
+	position: relative
+	background: #ebeff0
+	&:after
+		position: absolute
+		top: 100%
+		left: 50%
+		margin-left: -33px
+		+arr(66, 24, #ebeff0, bottom)
+		content: ""
+		z-index: 1
+	.investcards__in
+		@extend %in
+		padding: 29px 0
+		+clr
+	.investcards__items
+		margin-left: -26px
+		margin-top: -26px
+
+.investcard
+	position: relative
+	float: left
+	width: 280px
+	height: 345px
+	+border-radius(5px)
+	+box-shadow(0 0 20px rgba(77,77,77,.1))
+	background: #fff
+	margin-left: 26px
+	margin-top: 26px
+	color: #fff
+	+transition(all .2s ease-in-out)
+	// overflow: hidden
+	&:before
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		content: ""
+		background: #000
+		+opacity(0)
+		+transition(all .2s ease-in-out)
+		+border-radius(5px)
+	&:hover
+		+transform(translateY(-15px))
+		&:before
+			+opacity(.5)
+		.investcard__btn
+			+opacity(1)
+			+scale(1)
+
+	.investcard__btn
+		position: absolute
+		top: 150px
+		width: 226px
+		left: 50%
+		margin-left: -113px
+		text-align: center
+		+border-radius(4px)
+		background: #009fc8
+		color: #fff
+		text-decoration: none
+		height: 40px
+		line-height: 40px
+		font-size: 15px
+		font-weight: bold
+		+opacity(0)
+		+transition(all .3s ease-in-out)
+		+scale(0)
+		&:hover
+			background: #008dba
+		i
+			display: inline-block
+			vertical-align: middle
+			margin-right: 8px
+			position: relative
+			top: -2px
+			+s(investinfo)
+	.investcard__header
+		position: relative
+		width: 180px
+		margin: 0 auto
+		text-align: center
+		background: rgba(#fff, .95)
+		+border-radius(0 0 8px 8px)
+		line-height: 20px
+		padding: 9px 5px
+		+box
+	.investcard__title
+		font-size: 16px
+		color: #006697
+		a
+			color: inherit
+			text-decoration: underline
+			&:hover
+				text-decoration: none
+	.investcard__descr
+		font-size: 14px
+		color: #404040
+		font-style: italic
+	.investcard__data
+		position: absolute
+		bottom: 15px
+		left: 0
+		z-index: 1
+		font-size: 15px
+		line-height: 20px
+		strong
+			font-weight: bold
+		sup
+			line-height: 1
+	.investcard__data-row
+		margin-top: 11px
+	.investcard__data-wrap
+		background: rgba(#000, .7)
+		padding: 5px 10px
+		display: inline-block
+
+.investsection
+	&.investsection_mod
+		background: image-url("investshadow.png") repeat-x
+		.investsection__in
+			padding: 46px 0 31px
+		.h1
+			margin-bottom: 23px
+	p
+		color: #333333
+		font-size: 16px
+		line-height: 22px
+		margin: 21px 0
+	a
+		color: #00aad6
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+	ul
+		list-style-type: none
+		li
+			margin-top: 21px
+		a
+			color: #006795
+	.cols2
+		p
+			margin-right: 20px
+	.investsection__in
+		@extend %in
+		padding: 35px 0 35px
+
+.investup
+	text-align: center
+	margin-top: 32px
+	a
+		color: #006795
+		font-size: 16px
+		text-decoration: none
+		border-bottom: 1px dotted #006795
+		&:hover
+			border-color: transparent
+
+.textarea
+	resize: vertical
+	height: 60px
+
+.textarea,
+.input
+	font-family: 'PT Sans', sans-serif
+	+border-radius(4px)
+	background: #f8f8f8
+	border: 1px solid #d9d9d9
+	width: 100%
+	padding: 6px 15px
+	line-height: 21px
+	font-size: 15px
+	color: #666666
+	outline: none
+	font-weight: normal
+	+box
+	+font-smoothing
+	+placeholder
+		color: #646464
+	.has-error &
+		border-color: #b53439 !important
+
+.investform
+	.investform__field
+		+clr
+		margin-top: 18px
+		&.has-error
+			.investform__tooltip
+				display: block
+		&:first-child
+			margin-top: 0
+		&.investform__field_save
+			margin-top: 20px
+		.btn
+			margin-right: 18px
+	.investform__label
+		font-size: 15px
+		color: #333333
+		line-height: 1
+		margin-bottom: 11px
+	.investform__el
+		position: relative
+	.investform__fieldset
+		width: 230px
+		float: left
+		& + .investform__fieldset
+			float: right
+	.investform__tooltip
+		position: absolute
+		top: 100%
+		left: 0
+		width: 100%
+		margin-top: 16px
+		text-align: center
+		z-index: 1
+		display: none
+		&:before
+			position: absolute
+			bottom: 100%
+			left: 50%
+			margin-left: -10px
+			+arr(20, 11, #df6a6c, t)
+			content: ""
+		span
+			+nosel
+			cursor: default
+			font-size: 14px
+			color: #fff
+			line-height: 20px
+			background: #df6a6c
+			+border-radius(4px)
+			padding: 6px 10px
+			display: inline-block
+
+
+
+
+
+
