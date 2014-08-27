@@ -3,13 +3,11 @@
 
 .investpromo .investpromo__in, .investcards .investcards__in, .investsection .investsection__in { width: 1200px; margin-left: auto; margin-right: auto; }
 
-.has-page-invest { background: #f5f8f9; }
-.has-page-invest .header-wrap { background: white; }
-.has-page-invest .header-wrap .container { margin-bottom: 0; }
+.has-page-invest .header.container { margin-bottom: 0; }
 .has-page-invest .pre-footer { height: 292px; }
-.has-page-invest .footer { padding-top: 28px; border-top: 1px solid #e0e7e8; }
+.has-page-invest .footer { background: #f5f8f9; padding-top: 28px; border-top: 1px solid #e0e7e8; }
 
-.page-invest { font-family: "PT Sans", sans-serif; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; font-size: 16px; line-height: 20px; }
+.page-invest { background: #f5f8f9; font-family: "PT Sans", sans-serif; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; font-size: 16px; line-height: 20px; }
 .page-invest .h1 { font-family: "PT Sans", sans-serif; font-size: 24px; font-weight: normal; font-style: normal; color: #1d1d1d; line-height: 1; margin-bottom: 21px; }
 .page-invest .btn { font-family: "PT Sans", sans-serif; display: inline-block; font-weight: bold; font-size: 14px; color: white; text-decoration: none; background: #00aad5; border: none; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; line-height: 20px; padding: 8px 18px; outline: 0; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; cursor: pointer; }
 .page-invest .btn:hover { background: #008dba; }
